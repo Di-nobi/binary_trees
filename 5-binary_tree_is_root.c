@@ -9,7 +9,7 @@ int binary_tree_is_root(const binary_tree_t *node)
 {
 	node = malloc(sizeof(binary_tree_t));
 
-	if (!node)
+	if (!node || node->parent)
 		return (0);
 
 	return (1);
